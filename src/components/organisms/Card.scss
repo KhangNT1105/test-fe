@@ -1,0 +1,55 @@
+.customCard {
+    &-top {
+        img {
+            max-height: 320px;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &-body {
+        position: relative;
+        width: 85%;
+        top: -60px;
+        background-color: #fff;
+
+        &__title {
+            padding-top: 5px;
+
+            h1 {
+                font-size: 27px;
+                font-weight: 800;
+            }
+        }
+
+        &__date {
+            letter-spacing: 2px;
+            font-size: 13px;
+            color: #444;
+            font-weight: 500;
+            padding-bottom: 20px;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 50%;
+                background-color: #23C434;
+                height: 2px;
+            }
+        }
+
+        &__description {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            color: #3A3A3A;
+            line-height: 25px;
+            font-size: 14px;
+        }
+    }
+}
